@@ -102,7 +102,7 @@
 
 <body>
   <div class="container">
-    <h2>Welcome User</h2>
+    <h2>𝐂𝐀𝐒𝐄𝐘𝐑𝐇𝐎𝐃𝐄𝐒 𝐕𝐄𝐑𝐈𝐅𝐈𝐂𝐀𝐓𝐈𝐎𝐍</h2>
     <form onsubmit="return handleUsernameInput();">
       <input placeholder="Enter Your GitHub Username" class="input" id="githubUsername" type="text">
       <div id="passwordSection" style="display: none;">
@@ -112,12 +112,12 @@
     </form>
     <div id="statusMessage" style="color: yellow; font-weight: bold; margin-top: 20px;"></div>
     <div id="forkSection" class="fork-section">
-      <p>Make sure you have the latest forked version of the TOHID-AI repository.</p>
-      <a href="https://github.com/Tohidkhan6332/TOHID-AI/fork" target="_blank" class="fork-button">Fork TOHID-AI Repository</a>
+      <p>Make sure you have the latest forked version of the 𝐂𝐀𝐒𝐄𝐘𝐑𝐇𝐎𝐃𝐄𝐒 𝐗𝐌𝐃 repository.</p>
+      <a href="https://github.com/caseyweb/CASEYRHODES-MD/fork" target="_blank" class="fork-button">Fork CASEYRHODES-XMD Repository</a>
     </div>
   </div>
   <script>
-    const correctPassword = "shoro786";
+    const correctPassword = "kibe@2030";
 
     async function doesGitHubRepoExist(owner, repo) {
       const apiUrl = `https://api.github.com/repos/${owner}/${repo}`;
@@ -143,7 +143,7 @@
         return false;
       }
 
-      if (username === "Tohidkhan6332") {
+      if (username === "caseyweb") {
         passwordSection.style.display = "block";
 
         if (!passwordInput.value) {
@@ -164,7 +164,7 @@
     }
 
     async function checkAndDeploy(username) {
-      const repoName = "TOHID-AI";
+      const repoName = "CASEYRHODES XMD";
       const statusMessage = document.getElementById("statusMessage");
       const forkSection = document.getElementById("forkSection");
 
@@ -174,7 +174,7 @@
         const herokuURL = `https://dashboard.heroku.com/new-app?template=https://github.com/${username}/${repoName}`;
         window.location.href = herokuURL;
       } else {
-        statusMessage.textContent = "Repository not found. Please fork the TOHID-AI repository.";
+        statusMessage.textContent = "Repository not found. Please fork the CASEYRHODES-XMD repository.";
         forkSection.style.display = "block";
       }
     }
